@@ -1,0 +1,35 @@
+<div class="col-md-6 offset-md-3 mt-5">
+  <div class="card">
+      <h4 class="card-header">Komkom</h4>
+      <div class="card-body">
+
+<form [formGroup]="formConnexion">
+<div class="form-group"> 
+  <i class="fa fa-address-book" aria-hidden="true"></i>   
+  <label for="">Username</label>
+  <input
+  required 
+  minlength="3" 
+  type="text" 
+  formControlName="username" 
+  class="form-control" 
+  placeholder="username"  
+  id="username">
+</div>
+<div class="form-group">
+  <i class="fa fa-unlock" aria-hidden="true"></i>
+    <label for="">Password</label>
+    <input 
+    required 
+    minlength="3" 
+    type="password" 
+    formControlName="password"
+     class="form-control" 
+     placeholder="password"
+    id="pwd">
+  </div>
+  <button type="submit" (click)="onConnexion()" class="btn btn-primary">Se Connecter</button>
+</form>
+</div>
+</div>
+</div>
